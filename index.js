@@ -7,35 +7,12 @@ const currentColour = document.getElementById('current__Colour');
 const currentHEX = document.getElementById('current__HEX');
 const body =  document.body;
 
-console.log(body);
+const RGB = [R, G, B];
 
-R.addEventListener("mousemove", ()=>{
-    ChangeColour();
-})
-R.addEventListener("touchmove", ()=>{
-    ChangeColour();
-})
-R.addEventListener("change", ()=>{
-    ChangeColour();
-})
-
-G.addEventListener("mousemove", ()=>{
-    ChangeColour();
-})
-G.addEventListener("touchmove", ()=>{
-    ChangeColour();
-})
-G.addEventListener("change", ()=>{
-    ChangeColour();
-})
-B.addEventListener("mousemove", ()=>{
-    ChangeColour();
-})
-B.addEventListener("touchmove", ()=>{
-    ChangeColour();
-})
-B.addEventListener("change", ()=>{
-    ChangeColour();
+RGB.forEach(slider =>{
+    slider.addEventListener("mousemove", ChangeColour);
+    slider.addEventListener("touchmove", ChangeColour);
+    slider.addEventListener("change", ChangeColour);
 })
 function ChangeColour(){
     currentColour.style.background =  `rgb(${R.value},${G.value},${B.value})`;
