@@ -9,13 +9,13 @@ const body =  document.body;
 
 console.log(body);
 
-R.addEventListener("change", ()=>{
+R.addEventListener("mousemove", ()=>{
     ChangeColour();
 })
-G.addEventListener("change", ()=>{
+G.addEventListener("mousemove", ()=>{
     ChangeColour();
 })
-B.addEventListener("change", ()=>{
+B.addEventListener("mousemove", ()=>{
     ChangeColour();
 })
 HEX.addEventListener("change", ()=>{
