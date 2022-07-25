@@ -15,16 +15,26 @@ R.addEventListener("mousemove", ()=>{
 R.addEventListener("touchmove", ()=>{
     ChangeColour();
 })
+R.addEventListener("change", ()=>{
+    ChangeColour();
+})
+
 G.addEventListener("mousemove", ()=>{
     ChangeColour();
 })
 G.addEventListener("touchmove", ()=>{
     ChangeColour();
 })
+G.addEventListener("change", ()=>{
+    ChangeColour();
+})
 B.addEventListener("mousemove", ()=>{
     ChangeColour();
 })
 B.addEventListener("touchmove", ()=>{
+    ChangeColour();
+})
+B.addEventListener("change", ()=>{
     ChangeColour();
 })
 function ChangeColour(){
