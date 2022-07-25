@@ -12,20 +12,23 @@ console.log(body);
 R.addEventListener("mousemove", ()=>{
     ChangeColour();
 })
+R.addEventListener("touchmove", ()=>{
+    ChangeColour();
+})
 G.addEventListener("mousemove", ()=>{
+    ChangeColour();
+})
+G.addEventListener("touchmove", ()=>{
     ChangeColour();
 })
 B.addEventListener("mousemove", ()=>{
     ChangeColour();
 })
-HEX.addEventListener("change", ()=>{
-    ChanheWithHEX();
+B.addEventListener("touchmove", ()=>{
+    ChangeColour();
 })
 function ChangeColour(){
     currentColour.style.background =  `rgb(${R.value},${G.value},${B.value})`;
     currentHEX.innerHTML = currentColour.style.background;
     body.style.background =  `rgb(${R.value},${G.value},${B.value})`;
-}
-function ChanheWithHEX(){
-    console.log(HEX.value);
 }
