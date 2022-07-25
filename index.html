@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="udapt.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Lato&family=Lora:ital,wght@0,700;1,400&family=Merriweather:ital@1&family=Quicksand&display=swap" rel="stylesheet">
+
+    <title>c a c - ok</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span id="main__Title">Color Art Create - OK</span>
+        </header>
+        <section id="main__Section">
+            <div class="interface">
+                <div class="scale__container">
+                    <div class="personal__scale__container">
+                        R
+                        <input type="range" class="scales" id="R-CL" min="0" max="255" value="0" step="1">
+                    </div>
+                    <div class="personal__scale__container">
+                        G
+                        <input type="range" class="scales" id="G-CL" min="0" max="255" value="0" step="1">
+                    </div>
+                    <div class="personal__scale__container">
+                        B
+                        <input type="range" class="scales" id="B-CL" min="0" max="255" value="0" step="1">
+                    </div>
+                </div>
+                <!-- <div class="HEX__container">
+                    <div class="personal__scale__container" id="personal__scale__container__HEX">
+                        <input type="range" class="scales" id="HEX-CL" min="0" max="768" value="0" step="1">
+                        <div id="HEX__table"></div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="info__Panel">
+                <div id="current__Colour__container">
+                    <div id="current__Colour"></div>
+                    <div id="current__HEX">rgb(255, 255, 255)</div>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
